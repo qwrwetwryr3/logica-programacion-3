@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Actividad SA-LPD3</h1>
+    <h2>Esta pagina calcula el factorial de un numero.</h2>
+    <label>Ingrese numero: </label>
+    <input type="number" id="num"> <input type="button" value="Calcular" onclick="calcularFactorial()">
+    <h3 id="resultado"></h3>
+
+    <script>
+        function calcularFactorial(){
+            var num=document.getElementById("num").value;
+            var resultado=1;
+            for (var i=1;i<=num;i++){
+                resultado*=i;
+            }
+            document.getElementById("resultado").innerHTML="El factorial es "+resultado;
+            alert("El resultado es: "+resultado);
+        }
+    </script>
+
+</body>
+</html>
